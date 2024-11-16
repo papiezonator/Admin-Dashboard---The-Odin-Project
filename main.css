@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+#site-wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 20% 80%;
+}
+
+#side-nav, #navbar, .main {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#side-nav > div {
+    margin: 2vh;
+}
+
+#side-nav {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+#navbar {
+    grid-column-start: 2;
+}
