@@ -22,8 +22,8 @@ a {
 #site-wrapper {
     display: grid;
     height: 100%;
-    grid-template-rows: 20% auto;
-    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 100%;
+    grid-template-columns: 0.25fr 1fr;
 }
 
 #navbar, .main {
@@ -42,7 +42,7 @@ a {
     grid-column-end: 2;
     /* site wrapper grid setting */
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 20% 1fr;
     background-color: #1992D4;
 }
