@@ -59,8 +59,8 @@ a {
 }
 
 .item-top {
+    margin-bottom: 5vh;
     width: min-content;
-    margin-bottom: 7vh;
 }
 
 .item-top > a {
@@ -95,7 +95,7 @@ a {
     width: 3.5vh;   
 }
 
-.side-top > div {
+.side-top > .item {
     margin: 1.5vh;
 }
 
