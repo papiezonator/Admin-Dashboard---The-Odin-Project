@@ -26,7 +26,7 @@ a {
     grid-template-columns: 20% 80%;
 }
 
-#side-nav, #navbar, .main {
+#navbar, .main {
     border: 2px solid black;
     border-collapse: collapse;
 }
@@ -110,22 +110,65 @@ a {
 
 /* navigation section */
 
-.nav-icon {
-    fill: black;
-    height: 3vh;
-    width: 3vh;
+#navbar {
+    grid-column-start: 2;
+    display: grid;
 }
 
-.search-bar > input {
+#navbar > div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 25%;
+
+}
+
+.nav-top, .nav-bottom {
+    border: 2px  black solid;
+    
+}
+
+.nav-icon, .notif {
+    fill: black;
+    height: 30px;
+    width: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 0vh;  
+}
+
+.user-info > div {
+    margin-right: 3vh;
+}
+
+.avatar > img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+}
+
+.search-bar {
+    margin-left: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#searchbar {
+    margin-left: 2vh;
     width: 80vh;
     height: 3.5vh;
     border-radius: 12px;
     background-color: #E2E8F0;
     border: none;
+    font-size: 1rem; 
+    padding-left: 10px;   
+}
 
+#searchbar:focus {
+    outline: none;
 }
 
 
-#navbar {
-    grid-column-start: 2;
-}
+
