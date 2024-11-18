@@ -108,6 +108,23 @@ a {
     margin: 1.5vh;
 }
 
+/* navigation section */
+
+.nav-icon {
+    fill: black;
+    height: 3vh;
+    width: 3vh;
+}
+
+.search-bar > input {
+    width: 80vh;
+    height: 3.5vh;
+    border-radius: 12px;
+    background-color: #E2E8F0;
+    border: none;
+
+}
+
 
 #navbar {
     grid-column-start: 2;
