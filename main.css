@@ -113,13 +113,16 @@ a {
 #navbar {
     grid-column-start: 2;
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 0.4fr 1fr 0.4fr
 }
 
-#navbar > div {
+.nav-top {
+    grid-column-start: 1;
+    grid-column-end: 5;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 25%;
-
 }
 
 .nav-top, .nav-bottom {
@@ -136,11 +139,10 @@ a {
 .user-info {
     display: flex;
     align-items: center;
-    margin-right: 0vh;  
 }
 
 .user-info > div {
-    margin-right: 3vh;
+    margin-right: 3.5vh;
 }
 
 .avatar > img {
@@ -170,5 +172,47 @@ a {
     outline: none;
 }
 
+/* nav-bottom */
+
+.nav-bottom {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 4 span;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+}
+
+.user-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.nav-buttons {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3 span;
+    width: 100%;
+    display: flex;
+    margin-left: 8vh;
+    align-items: center;
+    
+    
+}
+
+
+
+
+.nav-button > button {
+    border-radius: 20px;
+    height: 40px;
+    width: 12vh;
+    border: none;
+    background-color: #1992D4;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5vh;
+}
 
 
