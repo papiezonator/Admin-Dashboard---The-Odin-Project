@@ -114,7 +114,7 @@ a {
     grid-column-start: 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 0.4fr 1fr 0.4fr
+    grid-template-columns: 1fr 0.4fr 0.8fr;
 }
 
 .nav-top {
@@ -177,9 +177,10 @@ a {
 .nav-bottom {
     grid-column-start: 1;
     grid-row-start: 2;
-    grid-column-end: 4 span;
+    grid-row-end: 2;
+    grid-column-end: 4;
     display: grid;
-    grid-template-columns: 0.7fr 0.3fr 0.3fr;
+    grid-template-columns: 0.7fr 0.5fr;
     grid-template-rows: 1fr;
 }
 
@@ -191,10 +192,9 @@ a {
 .nav-buttons {
     grid-row-start: 1;
     grid-column-start: 2;
-    grid-column-end: 3 span;
+    grid-column-end: 3;
     width: 100%;
     display: flex;
-    margin-left: 8vh;
     align-items: center;
     
     
